@@ -19,8 +19,6 @@ class TestDriver
         Capybara.default_driver = :selenium # this can be changed to :selenium if you want to watch what's going on :webkit if not
         browser = Capybara.current_session.driver.browser
         Capybara.default_wait_time = TimeOut::WAIT_CONTROL_CONST
-        browser.manage.delete_all_cookies
-        browser.manage.window.maximize
       end
     end
   end
