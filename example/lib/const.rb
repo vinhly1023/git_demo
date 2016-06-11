@@ -3,4 +3,5 @@ class CONST
   FIRST_NAME = 'Vinh'
   LAST_NAME = 'Ly'
   COMPANY = 'LogiGear'
+  COUNTRY = 'VN'
 end
