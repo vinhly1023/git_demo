@@ -11,18 +11,13 @@ class Connection
   @username = doc.search('//username').text
   @password = doc.search('//password').text
   @database = doc.search('//database').text
-  @port = doc.search('//port').text
+  @port_number = doc.search('//port').text
 
-  def self.my_sql_connection(querystring)
-    # Initiate connection to mysql database
-    con = Mysql.new @server, @username, @password, @database, @port
-
-    # Excute query to get categories for French page
+  def self.sql_connection(querystring)
+    con = Mysql.new @server, @username, @password, @database, @port_number
     rs = con.query querystring
-
-    # Close connection
     con.close
     rs
   end
 end
-# TEST 2: Commit directly to MASTER
+
