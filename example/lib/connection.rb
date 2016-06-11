@@ -1,9 +1,7 @@
 require 'lib/const'
 require 'mysql'
 
-# This class initiate connection to MySql and execute queries
 class Connection
-  # get information from lib/data.xml file
   xml_content = File.read("#{File.expand_path File.dirname(__FILE__)}/data.xml")
   doc = Nokogiri::XML(xml_content)
 
