@@ -4,4 +4,5 @@ class CONST
   LAST_NAME = 'Ly'
   COMPANY = 'LogiGear'
   COUNTRY = 'VN'
+  EMAIL = 'test@abc.com'
 end

@@ -10,8 +10,8 @@ class Connection
   @server = doc.search('//server').text
   @username = doc.search('//username').text
   @password = doc.search('//password').text
-  @database = doc.search('//database').text
-  @port = doc.search('//port').text
+  @database = doc.search('//db_name').text
+  @port = doc.search('//port_number').text
 
   def self.my_sql_connection(querystring)
     # Initiate connection to mysql database
