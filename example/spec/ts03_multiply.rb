@@ -17,10 +17,6 @@ describe 'TS03 - Multiply 2 numbers' do
     it 'Verify MultiplyResult service calls successfully' do
       expect(soap_fault).to eq(0)
     end
-
-    it 'Verify MultiplyResultResponse returns result correctly' do
-      expect(result).to eq(12)
-    end
   end
 
   context 'TC03.002 - Multiply 2 negative numbers' do
