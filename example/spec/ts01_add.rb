@@ -4,7 +4,7 @@ require 'calculator'
 describe 'TS01 - Add 2 numbers' do
   res = nil
 
-  context 'TC01.001 - Add 2 integer numbers' do
+  context 'TC01 - Add 2 integer numbers' do
     soap_fault = nil
     result = nil
     before :all do
@@ -22,7 +22,7 @@ describe 'TS01 - Add 2 numbers' do
     end
   end
 
-  context 'TC01.002 - Add 2 negative numbers' do
+  context 'TC01 - Add 2 negative numbers' do
     soap_fault = nil
     result = nil
     before :all do
@@ -40,7 +40,7 @@ describe 'TS01 - Add 2 numbers' do
     end
   end
 
-  context 'TC01.003 - Add 1 positive number and 1 negative number - TEST' do
+  context 'TC03 - Add 1 positive number and 1 negative number' do
     soap_fault = nil
     result = nil
     before :all do
@@ -58,17 +58,17 @@ describe 'TS01 - Add 2 numbers' do
     end
   end
 
-  context 'TC01.004 - Add with float number' do
+  context 'TC04 - Add with float number' do
     before :all do
       res = Calculator.add(1.0, 3.5)
     end
 
-    it "Verify 'Invalid input value' erroe responses" do
+    it "Verify 'Invalid input value' error responses" do
       expect(res).to eq('Invalid input')
     end
   end
 
-  context 'TC01.005 - Add with characters input value' do
+  context 'TC05 - Add with characters input value' do
     before :all do
       res = Calculator.add('abc', 3)
     end
