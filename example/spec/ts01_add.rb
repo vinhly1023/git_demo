@@ -2,7 +2,6 @@ require File.expand_path('../../spec_helper', __FILE__)
 require 'calculator'
 
 describe 'TS01 - Add 2 numbers' do
-  #---Set variable all TS
   res = nil
 
   context 'TC01.001 - Add 2 integer numbers' do
@@ -41,7 +40,7 @@ describe 'TS01 - Add 2 numbers' do
     end
   end
 
-  context 'TC01.003 - Add 1 positive number and 1 negative number' do
+  context 'TC01.003 - Add 1 positive number and 1 negative number - TEST' do
     soap_fault = nil
     result = nil
     before :all do
@@ -76,16 +75,6 @@ describe 'TS01 - Add 2 numbers' do
 
     it "Verify 'Invalid input value' erroe responses" do
       expect(res).to eq('Invalid input')
-    end
-  end
-
-  context 'TC01.006 - Add with over load input range' do
-    before :all do
-      res = Calculator.add(99999999999, 3)
-    end
-
-    it "Verify 'Input value is over load' erroe responses" do
-      expect(res).to eq('Input value is over load')
     end
   end
 end
