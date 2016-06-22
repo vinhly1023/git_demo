@@ -5,5 +5,5 @@ class CONST
   COMPANY = 'LogiGear'
   COUNTRY = 'VN'
   EMAIL = 'lyvinh@gmail.com'
-  ADDRESS = 'NVL DA NANG'
+  ADDRESS = 'Nguyen Van Linh DA NANG'
 end
