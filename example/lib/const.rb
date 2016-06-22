@@ -3,7 +3,7 @@ class CONST
   FIRST_NAME = 'Vinh'
   LAST_NAME = 'Ly'
   COMPANY = 'LogiGear'
-  COUNTRY = 'VN'
+  COUNTRY = 'VN - Viet Nam'
   EMAIL = 'lyvinh@gmail.com'
   ADDRESS = 'Nguyen Van Linh DA NANG VN'
   DOB = '06/12/2016'
